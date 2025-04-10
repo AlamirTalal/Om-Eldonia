@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz2</title>
+<link href=style.css rel=stylesheet>
+<link rel=stylesheet href="../../../Bootstraip 5 . files/css/all.min.css">
+<link rel=stylesheet href="../../../Bootstraip 5 . files/css/bootstrap.min.css">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin=anonymous referrerpolicy=no-referrer />
+</head>
+<body>
+<form class=container id=quiz name=quiz>
+<div class=card_question>
+<div style=margin-left:800px class="btn1 d-flex justify-content-center pt-2 align-items-flex-end">
+<button type=button id=english class="btn fw-bold btn-danger me-1">E</button>
+<button type=button id=arabic class="btn fw-bold btn-success"><span class=fs-6>ع</span></button>
+</div>
+<div class=Title_game>
+<h2 style=font-size:55px id=title>إختبر معرفتك</h2>
+</div>
+<div class=question>
+<h2 id=q>من اي جيل مصر الجديده ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id="mc q1" name=question1 value="الجيل العاشر">الجيل العاشر
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=q2 id=mc name=question1 value="الجيل الرابع">الجيل
+الرابع
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=q3 id=mc name=question1 value="الجيل السادس">الجيل
+السادس
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=q4 id=mc name=question1 value="الجيل الاول">الجيل الاول
+</div>
+</div>
+<br>
+<div class=question>
+<h2>كم تبلغ مساحه العاصمه الاداريه ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value="170 الف فدان">170 الف فدان
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value="100 الف فدان">100 الف فدان
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value="70 الف فدان">70 الف فدان
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value="200 الف فدان">200 الف فدان
+</div>
+</div>
+<br>
+<div class=question>
+<h2>متي تم افتتاح الكتدرائيه القبطيه ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value=7/8/2014>7/1/2019
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value=6/1/2019>6/1/2019
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value=5/8/2014>10/1/2019
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value=20/8/2014>20/1/2019
+</div>
+</div>
+<br>
+<div class=question>
+<h2>كم عدد المناطق التي ضمها مزكر القياده الدولي ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value="5 مناطق">5 مناطق
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value="10 مناطق">10 مناطق
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value="13 منطقه">13 منطقه
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value="3 مناقط">3 مناقط
+</div>
+</div>
+<br>
+<div class=question>
+<h2>ما هي مساحه المسجد الكبير المبني علي المملوكي ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="100 فدان">100 فدان
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="50 فدان">50 فدان
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="106 فدان">106 فدان
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="200 فدان">200 فدان
+</div>
+</div>
+<div class=button>
+<button class="btn-warning border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button onclick=myFunction()>إعادة</button>
+<input class="btn_adhm btn-warning border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button type=button value=إنتهيت onclick=check()>
+<button class="btn-danger border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button><a style=text-decoration:none;color:black href="../../../Other Pages/index2.html"> رجوع <i class="fa-solid ms-2 fa-arrow-right-to-bracket"></i></a></button>
+</div>
+<div id=after_submit>
+<p id=message></p>
+<p id=number_correct></p>
+</div>
+</div>
+</form>
+<script src=main.js></script>
+<script src=Back_Up.js></script>
+</body>
+</html>

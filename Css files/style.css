@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.container {
+    background-color: transparent;
+    margin: 10px;
+    padding: 15px;
+}
+
+.search {
+    border-radius: 4px;
+    width:200px;
+    height:35px;
+    border:2px solid none;
+    background: none;  
+    color: rgb(217, 47, 47);  
+    font-size: 16px;
+    transition: 0.8s;
+    line-height: 40px;
+    width: 0;
+    height: 0;
+    letter-spacing: 1px;
+}
+
+.btn1 {
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 37px;
+    height: 32px;
+    border:2px solid none;
+    margin-top: -3%;
+    
+
+}
+
+::placeholder:hover {
+    color: transparent;
+    font-weight: 100;
+    transition: 1s ease-in;
+
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    color: #e84118;
+}
+
+
+.nav-item:hover > .search{
+    width: 240px;
+    height: 30px;
+    padding: 0 5px;
+    border:2px solid white;
+
+    
+}
+
+.search-btn{
+    color: #e84118;
+    float: right;
+    background-color: #e84118;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width:135px;
+    height:85px;
+    z-index: 1;
+    position: absolute;
+    top:-8px;
+    left:5px;
+}
+
+
+.color{
+border-radius: 10px;
+width: 35px;
+height:35px ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/*Start media query */
+
+/* small monitors */
+@media (min-width: 576px) {
+    .container {
+        padding-left:45px;
+        padding-right:45px;
+    }
+
+    .logo {
+        position: absolute;
+        top:-5px;
+        left:5px;
+    }
+}
+
+/* medium monitors */
+@media (min-width: 768px) {
+    .container {
+        padding-left:35px;
+        padding-right:35px;
+
+    }
+}
+
+/*  large monitors */
+@media (min-width: 992px) {
+    .container {
+        padding-left:25px;
+        padding-right:25px;
+    }
+}
+
+/*  Extra monitors */
+@media (min-width: 1200px) {
+    .container {
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
+
+/*End media query */
+
+/* start the third section */
+
+ .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    /* border-radius: 25px; */
+    background-color: #FFF;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    display:flex;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f44040;
+    border-radius: 25px 25px 0px 0px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #f44040;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  }
+  .card-image{
+    position: relative;
+    height: 160px;
+    width: 200px;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 3px;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid #f44040;
+  }
+  .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #f44040;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease ease-in-out infinite;
+  }
+  .button:hover{
+    background: #f44040b7;
+  }
+  
+  .swiper-navBtn{
+    color: #000;
+    transition: color 0.3s ease ;
+  }
+  .swiper-navBtn:hover{
+    color: #f44040;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #f440408c;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #f44040;
+  }
+/* End the third section */
+/* start footer section*/
+.footer{
+    
+    font-weight: 400;
+    padding: 20px 0;
+    background-color: rgb(0, 0, 0);
+
+}
+.footer .social{
+    
+    text-align: center;
+    padding-bottom: 35px;
+    color: #007efd;
+}
+.footer .social a{
+    color: #fff;
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid  #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%; 
+    margin:0 8px;
+    opacity: 0.75;
+}
+.footer .social a:hover
+{
+    opacity: 0.9;
+
+
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul a{
+    color:white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .team {
+    margin-top: 15px;
+    text-align: center;
+    color: #aaa;
+
+}
+.instagram{
+    color: #C13584;
+}
+.facebook{
+    color:#4267B2 ;
+}
+.twitter{
+    color:#1DA1F2 ;
+}
+.linkedin{
+    color: #007efd ;
+}
+
+.slider_img{  
+  width:  1057px;   
+  height: 500px;   
+  border: 1px solid silver; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 1px 12px black;
+  animation-name: photo ;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  left: -90px;
+  overflow-x: hidden;
+  
+ }
+ @keyframes photo {
+     0%{background-image: url(../Images/26.jpg);}
+     20%{background-image: url(../Images/monorael\ 2.jpg);}
+     40%{background-image: url(../Images/21.jpg);}
+     60%{background-image: url(../Images/37.jpg);}
+     80%{background-image: url(../Images/44.jpg);}
+     100%{background-image: url(../Images/12.jpg);}
+ }
+ .kk{
+  margin-left: 5px;
+ }
+ 

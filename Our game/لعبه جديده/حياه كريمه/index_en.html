@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<link href=style.css rel=stylesheet>
+<meta charset=UTF-8>
+<link rel=stylesheet href="../../../Bootstraip 5 . files/css/all.min.css">
+<link rel=stylesheet href="../../../Bootstraip 5 . files/css/bootstrap.min.css">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin=anonymous referrerpolicy=no-referrer />
+</head>
+<body>
+<form class=container id=quiz name=quiz>
+<div class=card_question>
+<div class=Title_game>
+<h2 style="font-size:30px">Test your knowledge</h2>
+</div>
+<div class=question>
+<h2> When was the Good Life Initiative launched?</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+January 10, 2018 <input type=radio class=answer id=mc name=question1 value=1>
+</div>
+<div class=answer_1>
+January 14, 2019<input type=radio class=answer id=mc name=question1 value=2>
+</div>
+<div class=answer_1>
+January 4, 2018 <input type=radio class=answer id=mc name=question1 value=3>
+</div>
+<div class=answer_1>
+Jan 2, 2019 <input type=radio class=answer id=mc name=question1 value=4>
+</div>
+</div>
+<br>
+<div class=question>
+<h2 class=fs-3>Number of governorates benefiting from the Decent Life Initiative</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+10 <input type=radio class=answer id=mc name=question2 value=10>
+</div>
+<div class=answer_1>
+20<input type=radio class=answer id=mc name=question2 value=20>
+</div>
+<div class=answer_1>
+50 <input type=radio class=answer id=mc name=question2 value=50>
+</div>
+<div class=answer_1>
+30<input type=radio class=answer id=mc name=question2 value=30>
+</div>
+</div>
+<br>
+<div class=question>
+<h2>Decent life initiative includes decent housing </h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+for building housing complexes<input type=radio class=answer id=mc name=question3 value=44>
+</div>
+<div class=answer_1>
+Citizen training and employment<input type=radio class=answer id=mc name=question3 value=65>
+</div>
+<div class="answer_1 fs-3">
+Building and raising the efficiency of schools and nurseries<input type=radio class=answer id=mc name=question3 value=75>
+</div>
+<div class=answer_1>
+Construction of hospitals and health units <input type=radio class=answer id=mc name=question3 value=85>
+</div>
+</div>
+<br>
+<div class=question>
+<h2>Number of villages benefited from the Good Life Initiative</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+2467<input type=radio class=answer id=mc name=question4 value=2467>
+</div>
+<div class=answer_1>
+3946<input type=radio class=answer id=mc name=question4 value=3946>
+</div>
+<div class=answer_1>
+4584<input type=radio class=answer id=mc name=question4 value=4584>
+</div>
+<div class=answer_1>
+5167<input type=radio class=answer id=mc name=question4 value=5167>
+</div>
+</div>
+<br>
+<div class=question>
+<h2 class=fs-3> The initiative includes a decent life and economic empowerment</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+targeted at family, child, and woman<input type=radio class=answer id=mc name=question5 value="targeted at family, child and woman">
+</div>
+<div class=answer_1>
+training and employment of citizens<input type=radio class=answer id=mc name=question5 value="citizen training and employment">
+</div>
+<div class=answer_1>
+laying water connections<input type=radio class=answer id=mc name=question5 value="Laying water connections">
+</div>
+<div class=answer_1>
+Literacy<input type=radio class=answer id=mc name=question5 value=Literacy>
+</div>
+</div>
+<div class=button>
+<button class="btn-warning border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button onclick=myFunction()>Restart</button>
+<input class="btn_adhm btn-warning border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button type=button value=Finish onclick=check()>
+<button class="btn-danger border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button><a style=text-decoration:none;color:black href="../../../E-Other Pages/index3.html">Back<i class="fa-solid ms-2 fa-arrow-right-to-bracket"></i></a></button>
+</div>
+<div id=after_submit>
+<p id=message></p>
+<p id=number_correct></p>
+</div>
+</div>
+</form>
+<script src=main.js></script>
+<script src=Back_Up.js></script>
+</body>
+</html>

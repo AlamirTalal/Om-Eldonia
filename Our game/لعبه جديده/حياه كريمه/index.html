@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<meta charset=UTF-8>
+<link href=style.css rel=stylesheet>
+<link rel=stylesheet href="../../../Bootstraip 5 . files/css/all.min.css">
+<link rel=stylesheet href="../../../Bootstraip 5 . files/css/bootstrap.min.css">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin=anonymous referrerpolicy=no-referrer />
+</head>
+<body>
+<form class=container id=quiz name=quiz>
+<div class=card_question>
+<div class=Title_game>
+<h2 style=font-size:55px>!إختبر معرفتك</h2>
+</div>
+<div class=question>
+<h2> متي تم إطلاق مبادرة حياة كريمة </h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question1 value=1> ١٠ يناير ٢٠١٨
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question1 value=2>١٤ يناير ٢٠١٩
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question1 value=3> ٤ يناير ٢٠١٨
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question1 value=4>٢ يناير ٢٠١٩
+</div>
+</div>
+<br>
+<div class=question>
+<h2>عدد المحافظات المستفاده من مبادرة حياة كريمة</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value=10>10
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value=20>20
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value=50>50
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value=50> 50
+</div>
+</div>
+<br>
+<div class=question>
+<h2>تتضمن مبادرة حياة كريمة سكن كريم </h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value=44> لبناء مجمعات سكنية
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value=65>تدريب و تشغيل المواطنين
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value=75>بناء و رفع كفاءة المدارس و
+الحضانات
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value=85>بناء مستشفيات و وحدات صحية
+</div>
+</div>
+<br>
+<div class=question>
+<h2>عدد القري المستفاده من مبادرة حياة كريمة</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value=2467>2467
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value=3946>3946
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value=4584>4584
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value=5167>5167
+</div>
+</div>
+<br>
+<div class=question>
+<h2> تتضمن مبادرة حياة كريمة تمكن اقتصادي</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="تستهدف الأسرة  و الطفل و المرأة">
+تستهدف الأسرة و الطفل و المرأة
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="تدريب و تشغيل المواطنين"> تدريب و
+تشغيل المواطنين
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="مد وصلات المياه"> مد وصلات المياه
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="محو الأمية"> محو الأمية
+</div>
+</div>
+<div class=button>
+<input class="btn_adhm btn-warning border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button type=button value=إنتهيت onclick=check()>
+<button class="btn-warning border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button onclick=myFunction()>إعادة</button>
+<button class="btn-danger border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button><a style=text-decoration:none;color:black href="../../../Other Pages/index3.html"> رجوع<i class="fa-solid ms-2 fa-arrow-right-to-bracket"></i></a></button>
+</div>
+<div id=after_submit>
+<p id=message></p>
+<p id=number_correct></p>
+</div>
+</div>
+</form>
+<script src=main.js></script>
+<script src=Back_Up.js></script>
+</body>
+</html>

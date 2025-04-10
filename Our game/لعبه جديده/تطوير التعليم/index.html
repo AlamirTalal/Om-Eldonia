@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<link href=style.css rel=stylesheet>
+<link rel=stylesheet href="../../../Bootstraip 5 . files/css/all.min.css">
+<link rel=stylesheet href="../../../Bootstraip 5 . files/css/bootstrap.min.css">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin=anonymous referrerpolicy=no-referrer />
+</head>
+<body>
+<form class=container id=quiz name=quiz>
+<div class=card_question>
+<div class=Title_game>
+<h2 style=font-size:55px>!إختبر معرفتك</h2>
+</div>
+<div class=question>
+<h2>في اي سنه تم تشكيل المجالس التخصصية لتبادل الافكار </h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question1 value="في يناير 2014">في يناير 2014
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question1 value="في اكتوبر 2018">في اكتوبر 2018
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question1 value="في اغسطس 2014">في اغسطس 2014
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question1 value="في اغسطس 2010">في اغسطس 2010
+</div>
+</div>
+<br>
+<div class=question>
+<h2>في اي سنه تم اطلاق رؤية مصر 2030 ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value="في ديسمبر 2014">في ديسمبر 2014
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value="وفي نوفمبر 2014">في نوفمبر 2014
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value="في اكتوبر 2014">في اكتوبر 2014
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question2 value="في يناير 2014">في يناير 2014
+</div>
+</div>
+<br>
+<div class=question>
+<h2>متي تم اطلاق بنك المعرفه ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value="في اكتوبر 2018">في اكتوبر 2018
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value="في يناير 2016">في يناير 2016
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value="في نوفمبر 2016">في نوفمبر 2022
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question3 value="في ديسمبر 2022">في ديسمبر 2022
+</div>
+</div>
+<br>
+<div class=question>
+<h2>في اي دوله تم ارسال بعثات لتدريب المعلمين في ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value=الصين>الصين
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value=امريكا>امريكا
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value=اليابان>اليابان
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question4 value=الهند>الهند
+</div>
+</div>
+<br>
+<div class=question>
+<h2>كم عدد المدارس الحكوميه المتميره متوستط الدخل ؟</h2>
+</div>
+<div class=answers>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value=45>50 مدرسه
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value=55>10 مدارس
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value="13 مدرسه">13 مدرسه
+</div>
+<div class=answer_1>
+<input type=radio class=answer id=mc name=question5 value=25>5 مدارس
+</div>
+</div>
+<div class=button>
+<button class="btn-warning border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button onclick=myFunction()>إعادة</button>
+<input class="btn_adhm btn-warning border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button type=button value=إنتهيت onclick=check()>
+<button class="btn-danger border-0 p-2 w-25 fw-bold fs-3 alert-dark" id=button><a style=text-decoration:none;color:black href="../../../Other Pages/index5.html"> رجوع<i class="fa-solid ms-2 fa-arrow-right-to-bracket"></i></a></button>
+</div>
+<div id=after_submit>
+<p id=message></p>
+<p id=number_correct></p>
+</div>
+</div>
+</form>
+<script src=main.js></script>
+<script src=Back_Up.js></script>
+</body>
+</html>
